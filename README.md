@@ -9,15 +9,15 @@ sudo apt update && sudo apt install python3-pip git ansible -y
 ```
 
 ####  Беспарольный доступ SSH по ключам с Ansible сервера до узлов
-#### Гекнерация ключа
+#### Генерация ключа
 ```ShellSession
 cat .ssh/id_rsa.pub
 ```
-#### распечатаем и скопируем
+#### Распечатаем и скопируем ключ
 ```ShellSession
 cat .ssh/id_rsa.pub
 ```
-## k8s node server (вставляем скопированный ключ)
+## k8s node  (вставляем скопированный ключ)
 ```ShellSession
 mkdir .ssh/  && nano .ssh/authorized_keys
 ```
