@@ -19,7 +19,7 @@ all:
   children:
     kube_control_plane:
       hosts:
-        master-node-01:
+        master-node:
     kube_node:
       hosts:
         worker-node-01:
