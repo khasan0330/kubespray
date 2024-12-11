@@ -11,7 +11,7 @@ sudo apt update && sudo apt install python3-pip git ansible -y
 ####  Беспарольный доступ SSH по ключам с Ansible сервера до узлов
 #### Генерация ключа
 ```ShellSession
-cat .ssh/id_rsa.pub
+ssh-keygen
 ```
 #### Распечатаем и скопируем ключ
 ```ShellSession
@@ -22,7 +22,8 @@ cat .ssh/id_rsa.pub
 mkdir .ssh/  && nano .ssh/authorized_keys
 ```
 
-## Ansible server
+## Ansible server 
+#### в каталоге kubespray, скаченный с github
 #### Настройка кластера в плэйбуках ansible (нужно только заменить IP и имена для ваших машин)
 ```ShellSession
 nano inventory/mycluster/hosts.yaml 
